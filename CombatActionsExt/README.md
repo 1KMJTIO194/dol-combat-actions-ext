@@ -13,7 +13,7 @@
 | 「脱掉上衣」 | 左手 / 右手 | 对方上衣 | 对方 `chest is "clothed"`（同原版 Undress）→ 原版判定 + `npcUndressText`/`npcRevealText` |
 | 「脱掉下衣」 | 左手 / 右手 | 对方下衣 | 对方 `penis is "clothed"` 或 `vagina is "clothed"` → 成功后 penis/vagina 置 0 |
 | 「揉捏胸部」 | 左手 / 右手 | 对方胸部 | `$NPCList[i].chest is 0`（上身裸露） |
-| 「插入小穴」→「继续抽插」 | 左手 / 右手 | 对方小穴 | 对方 `vagina is 0`（小穴已露且空着）；插入后有「继续抽插」 |
+| 「插入小穴」→「继续指奸」→「拳交」→「继续拳交」 | 左手 / 右手 | 对方小穴 | 对方 `vagina is 0`（小穴已露且空着）；插入后可继续，之后再升级为拳交 |
 | 「手指插入」→「继续指奸」 | 左手 / 右手 | 对方肛门 | 对方下衣已脱；下身没被别的东西占着（占着只能失败） |
 | 「拳交」→「继续拳交」 | 左手 / 右手 | 对方肛门 | **手指已插入**后出现；入口仍未被别的东西占着 |
 | 「脚揉胸部」→「继续揉胸」 | 脚 | 对方胸部 | 玩家赤脚（`$worn.feet.type` 含 `"naked"`）+ 对方上身裸露；可持续 |
@@ -92,7 +92,7 @@ v0.8.0 起脱衣动作改为**参考原版性行为里的 `Undress:` 动作**（
 
 ## 安装
 
-1. 游戏内 ModLoader → 添加 zip → 选 `CombatActionsExt_v0.8.0.zip`
+1. 游戏内 ModLoader → 添加 zip → 选 `CombatActionsExt_v0.9.0.zip`
 2. 刷新页面
 3. 前置：ModLoader（0.5.x 自带）+ TweeReplacer
 

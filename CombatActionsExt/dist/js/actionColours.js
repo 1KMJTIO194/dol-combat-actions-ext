@@ -18,7 +18,7 @@
 		brat: ["caeUndressUpper", "caeUndressLower"],
 		/* 顺从/性行为（对应原版 leftgrab / leftstroke / leftchest）：胸部与插入类 */
 		sub: [
-			"caeHandChest", "caeHandVag", "caeHandVagKeep", "caeFeetChestKeep",
+			"caeHandChest", "caeHandVag", "caeHandVagKeep", "caeHandVagFist", "caeHandVagFistKeep", "caeFeetChestKeep",
 			"caeHandAnus", "caeHandAnusKeep", "caeHandFist", "caeHandFistKeep",
 			"caeFeetChest", "caeFeetAnus", "caeFeetAnusKeep"
 		]

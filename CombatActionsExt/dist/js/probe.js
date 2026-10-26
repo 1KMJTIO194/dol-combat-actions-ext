@@ -9,7 +9,7 @@
  * ==========================================================================*/
 (function () {
 	var TAG = "[CombatActionsExt]";
-	var VERSION = "0.8.0";
+	var VERSION = "0.9.0";
 	window.CombatActionsExt_version = VERSION;
 	console.log(TAG + " v" + VERSION + " 已加载（探针脚本）");
 

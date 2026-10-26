@@ -17,7 +17,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $ModName   = 'CombatActionsExt'
-$Version   = '0.8.0'
+$Version   = '0.9.0'
 $ScriptDir = $PSScriptRoot
 $GameDir   = if ($GameDirOverride) { $GameDirOverride } else { Split-Path -Parent $ScriptDir }
 if (-not $OutDir) { $OutDir = $GameDir }
@@ -175,7 +175,9 @@ $required = [ordered]@{
     '清空 widget'        = '<<widget "combatActionsExtClear">>'
     '手→胸 动作键'       = '<<set _leftaction["揉捏胸部"] to "caeHandChest">>'
     '手→小穴 插入键'     = '<<set _leftaction["插入小穴"] to "caeHandVag">>'
-    '手→小穴 继续键'     = '<<set _leftaction["继续抽插"] to "caeHandVagKeep">>'
+    '手→小穴 继续键'     = '<<set _leftaction["继续指奸"] to "caeHandVagKeep">>'
+    '手→小穴 拳交键'     = '<<set _leftaction["拳交"] to "caeHandVagFist">>'
+    '手→小穴 拳交继续键' = '<<set _leftaction["继续拳交"] to "caeHandVagFistKeep">>'
     '手→肛 插入键'       = '<<set _leftaction["手指插入"] to "caeHandAnus">>'
     '手→肛 继续键'       = '<<set _leftaction["继续指奸"] to "caeHandAnusKeep">>'
     '拳交 动作键'        = '<<set _leftaction["拳交"] to "caeHandFist">>'
@@ -199,6 +201,7 @@ $required = [ordered]@{
     '手部技能成长'       = '<<handskilluse>><<handstat>>'
     '脚部技能成长'       = '<<feetskilluse>><<feetstat>>'
     '小穴插入状态'       = '$caeLeftVag'
+    '小穴拳交状态'       = '$caeLeftVagFist'
     '脚踩胸状态'         = '$caeFeetChest'
     '肛门插入状态'       = '$caeLeftAnus'
     '拳交状态'           = '$caeLeftFist'
@@ -334,4 +337,4 @@ Write-Host ("  mod 源目录 : {0}" -f $SrcDir)
 Write-Host ("  安装包     : {0}" -f $ZipPath)
 Write-Host ("  自动加载表 : {0}" -f $ListPath)
 Write-Host ("  替换参数   : {0} 条（左右手注册 / 脚部注册 / 嘴部注册 / 结算挂点 / 结束清空 / 高潮拦截）" -f $patchParams.Count)
-Write-Host  '  动作       : 咬 / 脱掉上衣(原版式) / 脱掉下衣(原版式) → 揉捏胸部 / 插入小穴→继续抽插 / 手指插入→继续指奸→拳交→继续拳交 / 脚揉胸部→继续揉胸 / 脚趾插入→继续踩弄'
+Write-Host  '  动作       : 咬 / 脱掉上衣(原版式) / 脱掉下衣(原版式) → 揉捏胸部 / 插入小穴→继续指奸→拳交→继续拳交 / 手指插入→继续指奸→拳交→继续拳交 / 脚揉胸部→继续揉胸 / 脚趾插入→继续踩弄'
